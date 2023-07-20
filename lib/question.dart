@@ -1,9 +1,7 @@
 class Question {
-  String questionText = '';
-  bool questionAnswer = false;
+  String questionText;
+  bool questionAnswer;
 
-  Question({String question = '', bool answer = false}) {
-    questionText = question;
-    questionAnswer = answer;
-  }
+  // Nice syntactic sugar provided by dart for initialization of class fields.
+  Question(this.questionText, this.questionAnswer);
 }
